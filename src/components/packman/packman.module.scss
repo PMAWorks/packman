@@ -1,0 +1,100 @@
+.packman {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    padding: 7px;
+    transition: 0.6s;
+}
+
+.pacmanTop {
+    background-color: yellow;
+    height: 22px;
+    width: 45px;
+    border-radius: 100px 100px 5px 0;
+    animation: spin1 0.5s infinite linear;
+}
+
+.pacmanTopWithoutAnim {
+    background-color: yellow;
+    height: 22px;
+    width: 45px;
+    border-radius: 100px 100px 5px 0;
+    transform: rotate(-10deg);
+}
+
+.eyebrow {
+    position: absolute;
+    top: -2px;
+    height: 2px;
+    background: black;
+    width: 12px;
+    transform: rotate(20deg);
+}
+
+.eye {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background: white;
+    position: absolute;
+    top: 8px;
+    z-index: 5;
+    left: 26px;
+}
+
+.eyeDot {
+    position: relative;
+    width: 5px;
+    height: 5px;
+    top: 5px;
+    left: 6px;
+    border-radius: 3px;
+    background-color: black;
+}
+
+.pacmanBottom {
+    background-color: yellow;
+    height: 22px;
+    width: 45px;
+    border-radius: 0 5px 100px 100px;
+    animation: spin2 0.5s infinite linear;
+}
+
+.pacmanBottomWithoutAnim {
+    background-color: yellow;
+    height: 22px;
+    width: 45px;
+    border-radius: 0 5px 100px 100px;
+    transform: rotate(10deg);
+}
+
+@keyframes spin1 {
+
+    20% {
+        transform: rotate(0deg);
+    }
+
+    60% {
+        transform: rotate(-35deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
+
+@keyframes spin2 {
+
+    20% {
+        transform: rotate(0deg);
+    }
+
+    60% {
+        transform: rotate(35deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

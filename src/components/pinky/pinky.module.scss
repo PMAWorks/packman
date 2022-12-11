@@ -1,0 +1,70 @@
+.ghost {
+    padding: 5px;
+    display: grid;
+    align-items: center;
+    position: absolute;
+    transition: 1s;
+    z-index: 5;
+}
+
+.head {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 45px;
+    height: 15px;
+    background-color: rgb(255, 146, 164);
+}
+
+.eyes {
+    position: relative;
+    width: 45px;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(255, 146, 164);
+}
+
+.eye {
+    left: 1px;
+    width: 13px;
+    background: white;
+    height: 13px;
+    position: relative;
+}
+
+.bottom {
+    width: 45px;
+    background: rgb(255, 146, 164);
+    border-bottom: 3px dashed rgb(255, 146, 164);
+    background-color: transparent;
+}
+
+.eyebrowLeft {
+    width: 13px;
+    position: absolute;
+    height: 3px;
+    background: black;
+    top: -2px;
+    left: 0;
+    transform: rotate(10deg);
+}
+
+.eyebrowRight {
+    width: 13px;
+    position: absolute;
+    height: 3px;
+    background: black;
+    top: -2px;
+    left: 0;
+    transform: rotate(-10deg);
+}
+
+.eyeDot {
+    position: absolute;
+    transition: 0.4s;
+    top: 2px;
+    left: 2px;
+    width: 5px;
+    height: 5px;
+    background: black;
+}

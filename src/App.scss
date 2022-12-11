@@ -1,0 +1,214 @@
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  align-items: center;
+  background-color: #EFE2BA;
+}
+
+.infoBlock {
+  display: grid;
+  grid-template-rows: min-content min-content 1fr;
+  height: calc(100vh - 80px);
+  padding: 40px;
+
+  @media screen and (max-width: 1366px) {
+    display: none;
+  }
+}
+
+.playField {
+  position: relative;
+  width: 900px;
+  height: 900px;
+  display: grid;
+  grid-template-columns: repeat(15, 60px);
+  grid-template-rows: repeat(15, 60px);
+  margin: 0px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.logo {
+  font-size: 100px;
+  -webkit-text-stroke: .07em rgba(0, 0, 0, .5);
+  text-shadow: .07em 0 #F13C20;
+  text-align: center;
+  letter-spacing: 20px;
+  line-height: 60px;
+}
+
+.score {
+  font-size: 50px;
+  -webkit-text-stroke: .03em rgba(0, 0, 0, .5);
+  text-shadow: .03em 0 #F13C20;
+  line-height: 0;
+  text-align: center;
+
+  text-decoration: underline;
+}
+
+.scoreRow {
+  position: relative;
+}
+
+.controlBlock {
+  position: relative;
+  display: grid;
+  padding-left: 40px;
+  grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content min-content;
+  row-gap: 20px;
+}
+
+.control {
+  font-size: 50px;
+  -webkit-text-stroke: .02em rgba(0, 0, 0, .5);
+  text-shadow: .02em 0 #F13C20;
+  line-height: 0;
+}
+
+.keyDescription {
+  font-size: 40px;
+  -webkit-text-stroke: .02em rgba(0, 0, 0, .5);
+  text-shadow: .02em 0 #F13C20;
+}
+
+.logoContainer {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  align-items: center;
+  width: min-content;
+  margin: 0px auto;
+}
+
+.playBlock {
+  position: relative;
+}
+
+.block {
+  display: grid;
+  align-items: center;
+  transition: 0.5s;
+  background: #4056A1;
+}
+
+.field {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  @media screen and (max-width: 1366px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tree {
+  width: 3px;
+  height: 15px;
+  background: #D79922;
+  border-radius: 100% 0 75% 0;
+  position: absolute;
+  left: 9px;
+  top: -15px;
+  transform: rotate(20deg);
+  background: linear-gradient(to right, #D79922, #906618);
+}
+
+.leaf {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -12px;
+  left: -1px;
+  transform: rotate(100deg);
+  border-radius: 75% 0 75% 0;
+  background: linear-gradient(to right, #77ed9e, #53ad71);
+}
+
+.berry {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  border-radius: 10px;
+  top: 5px;
+  margin: 0px auto;
+  background: linear-gradient(to right, #F13C20, #8f2413);
+  border: 1px solid #D79922;
+}
+
+.blockBlock {
+  background: #F13C20;
+}
+
+
+
+
+
+.ghost {
+  padding: 5px;
+  display: grid;
+  align-items: center;
+  transition: 1s;
+}
+
+.ghead {
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  width: 120px;
+  height: 40px;
+  background-color: #F13C20;
+}
+
+.geyes {
+  position: relative;
+  width: 120px;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #F13C20;
+}
+
+.geye {
+  left: 20px;
+  width: 36px;
+  background: white;
+  height: 36px;
+  position: relative;
+}
+
+.gbottom {
+  width: 120px;
+  background: #F13C20;
+  border-bottom: 8px dashed #F13C20;
+  background-color: transparent;
+}
+
+.geyebrowLeft {
+  width: 36px;
+  position: absolute;
+  height: 8px;
+  background: black;
+  top: -4px;
+  left: 0;
+}
+
+.geyebrowRight {
+  width: 36px;
+  position: absolute;
+  height: 8px;
+  background: black;
+  top: -4px;
+  left: 0;
+}
+
+.geyeDot {
+  position: absolute;
+  transition: 0.4s;
+  top: 12px;
+  left: 12px;
+  width: 12px;
+  height: 12px;
+  background: black;
+}
